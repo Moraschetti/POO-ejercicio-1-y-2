@@ -1,12 +1,13 @@
 class auto{
-    public marca: string;
-    public modelo: number;
-    public encendido: boolean;
-    public aireAcondicionado: boolean;
-    public kilometraje: number;
-    public color: string;
+    private marca: string;
+    private modelo: number;
+    private encendido: boolean;
+    private aireAcondicionado: boolean;
+    private kilometraje: number;
+    private color: string;
 
-    constructor(paramMarca,paramModelo,paramEncendido,paramAireAcondicionado,paramKilometraje,paramColor){
+    constructor(paramMarca:string,paramModelo:number,paramEncendido:boolean,paramAireAcondicionado:boolean,
+        paramKilometraje:number,paramColor:string){
          this.marca = paramMarca;
          this.modelo = paramModelo;
          this.encendido = paramEncendido;
@@ -35,6 +36,4 @@ class auto{
 let auto1 = new auto("chevrolet",2013,false,false,91200,"azul");
 let auto2 = new auto("toyota",2020,true,true,12000,"blanco");
 let auto3 = new auto("ford",2022,true,false,2300,"verde");
- console.log("caracteristicas del auto: " + auto1);
- console.log("caracteristicas del auto: " + auto2);
- console.log("caracteristicas del auto: " + auto3);
+ console.log(`caracteristicas del auto:  Aire: ${auto1.aireAcondicionado} marca:${auto1.marca} modelo:${auto1.modelo} color:${auto1.color}`);
