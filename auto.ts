@@ -1,10 +1,10 @@
 class auto{
-    public marca: string;
-    public modelo: number;
-    public encendido: boolean;
-    public aireAcondicionado: boolean;
-    public kilometraje: number;
-    public color: string;
+    private marca: string;
+    private modelo: number;
+    private encendido: boolean;
+    private aireAcondicionado: boolean;
+    private kilometraje: number;
+    private color: string;
 
     constructor(paramMarca,paramModelo,paramEncendido,paramAireAcondicionado,paramKilometraje,paramColor){
          this.marca = paramMarca;
@@ -14,19 +14,19 @@ class auto{
          this.kilometraje = paramKilometraje;
          this.color = paramColor;
     }
-        encender():void{
+        encender():void{ 
             if(this.encendido===true){
                 this.encendido=false;
             }else{
                 this.encendido=true;
             }
     }
-    aireFrio():void{
+    aireFrio():void{ 
         if(this.aireAcondicionado===true){
             this.aireAcondicionado=false;
         }else(this.aireAcondicionado=true);
     }    
-    aireCaliente():void{
+    aireCaliente():void{ 
         if(this.aireAcondicionado===true){
             this.aireAcondicionado=false;
         }else(this.aireAcondicionado=true);
